@@ -15,7 +15,7 @@ function check_file(){
 function create_dir(){
     local -r dir="$1"
 
-    if [ ! -d "$dir" ]
+    if [ ! -e "$dir" ]
     then
         mkdir -p "$dir"
         echo "Create directory $dir"
