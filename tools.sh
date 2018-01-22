@@ -55,7 +55,7 @@ function move(){
 function copytodir(){
     local -r source="$1"
     local -r target="$2"
-    create_dir target
+    create_dir "$target"
     cp -rf "$source" "$target"
     echo "Copy from $source to $target"
 }
